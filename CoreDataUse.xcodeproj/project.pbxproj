@@ -15,6 +15,12 @@
 		E465833D1C1045C2006FECC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E465833B1C1045C2006FECC7 /* LaunchScreen.storyboard */; };
 		E46583481C1045C2006FECC7 /* CoreDataUseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E46583471C1045C2006FECC7 /* CoreDataUseTests.m */; };
 		E46583531C1045C2006FECC7 /* CoreDataUseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E46583521C1045C2006FECC7 /* CoreDataUseUITests.m */; };
+		E46583681C10460E006FECC7 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E46583651C10460E006FECC7 /* CoreDataManager.m */; };
+		E46583691C10460E006FECC7 /* ZZSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = E46583671C10460E006FECC7 /* ZZSQLite.m */; };
+		E465836C1C104627006FECC7 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E465836A1C104627006FECC7 /* TestModel.xcdatamodeld */; };
+		E46583711C10465F006FECC7 /* Personal+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E465836E1C10465F006FECC7 /* Personal+CoreDataProperties.m */; };
+		E46583721C10465F006FECC7 /* Personal.m in Sources */ = {isa = PBXBuildFile; fileRef = E46583701C10465F006FECC7 /* Personal.m */; };
+		E46583751C1048F5006FECC7 /* SaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E46583741C1048F5006FECC7 /* SaveModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		E465834E1C1045C2006FECC7 /* CoreDataUseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataUseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46583521C1045C2006FECC7 /* CoreDataUseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataUseUITests.m; sourceTree = "<group>"; };
 		E46583541C1045C2006FECC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46583641C10460E006FECC7 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		E46583651C10460E006FECC7 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		E46583661C10460E006FECC7 /* ZZSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSQLite.h; sourceTree = "<group>"; };
+		E46583671C10460E006FECC7 /* ZZSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSQLite.m; sourceTree = "<group>"; };
+		E465836B1C104627006FECC7 /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
+		E465836D1C10465F006FECC7 /* Personal+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Personal+CoreDataProperties.h"; path = "../Personal+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E465836E1C10465F006FECC7 /* Personal+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Personal+CoreDataProperties.m"; path = "../Personal+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E465836F1C10465F006FECC7 /* Personal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Personal.h; path = ../Personal.h; sourceTree = "<group>"; };
+		E46583701C10465F006FECC7 /* Personal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Personal.m; path = ../Personal.m; sourceTree = "<group>"; };
+		E46583731C1048F5006FECC7 /* SaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveModel.h; sourceTree = "<group>"; };
+		E46583741C1048F5006FECC7 /* SaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,7 @@
 		E465832C1C1045C2006FECC7 /* CoreDataUse */ = {
 			isa = PBXGroup;
 			children = (
+				E46583601C1045D0006FECC7 /* Classes */,
 				E46583301C1045C2006FECC7 /* AppDelegate.h */,
 				E46583311C1045C2006FECC7 /* AppDelegate.m */,
 				E46583331C1045C2006FECC7 /* ViewController.h */,
@@ -138,6 +156,48 @@
 				E46583541C1045C2006FECC7 /* Info.plist */,
 			);
 			path = CoreDataUseUITests;
+			sourceTree = "<group>";
+		};
+		E46583601C1045D0006FECC7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E46583631C1045E9006FECC7 /* Model */,
+				E46583621C1045E1006FECC7 /* CoreDataFile */,
+				E46583611C1045D9006FECC7 /* lib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E46583611C1045D9006FECC7 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E46583641C10460E006FECC7 /* CoreDataManager.h */,
+				E46583651C10460E006FECC7 /* CoreDataManager.m */,
+				E46583661C10460E006FECC7 /* ZZSQLite.h */,
+				E46583671C10460E006FECC7 /* ZZSQLite.m */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		E46583621C1045E1006FECC7 /* CoreDataFile */ = {
+			isa = PBXGroup;
+			children = (
+				E465836A1C104627006FECC7 /* TestModel.xcdatamodeld */,
+			);
+			name = CoreDataFile;
+			sourceTree = "<group>";
+		};
+		E46583631C1045E9006FECC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E465836D1C10465F006FECC7 /* Personal+CoreDataProperties.h */,
+				E465836E1C10465F006FECC7 /* Personal+CoreDataProperties.m */,
+				E465836F1C10465F006FECC7 /* Personal.h */,
+				E46583701C10465F006FECC7 /* Personal.m */,
+				E46583731C1048F5006FECC7 /* SaveModel.h */,
+				E46583741C1048F5006FECC7 /* SaveModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +331,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46583351C1045C2006FECC7 /* ViewController.m in Sources */,
+				E46583751C1048F5006FECC7 /* SaveModel.m in Sources */,
+				E46583721C10465F006FECC7 /* Personal.m in Sources */,
+				E46583711C10465F006FECC7 /* Personal+CoreDataProperties.m in Sources */,
 				E46583321C1045C2006FECC7 /* AppDelegate.m in Sources */,
+				E46583691C10460E006FECC7 /* ZZSQLite.m in Sources */,
+				E465836C1C104627006FECC7 /* TestModel.xcdatamodeld in Sources */,
+				E46583681C10460E006FECC7 /* CoreDataManager.m in Sources */,
 				E465832F1C1045C2006FECC7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataUse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.family.CoreDataUse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataUse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.family.CoreDataUse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +582,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E465836A1C104627006FECC7 /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E465836B1C104627006FECC7 /* TestModel.xcdatamodel */,
+			);
+			currentVersion = E465836B1C104627006FECC7 /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E46583221C1045C2006FECC7 /* Project object */;
 }
